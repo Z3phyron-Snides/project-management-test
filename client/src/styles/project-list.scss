@@ -1,0 +1,123 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  
+
+  .project {
+    width: 350px;
+    box-shadow: 0 0px 4px 1px hsla(0, 0%, 80%, 0.218);
+    transition: all .3s ease-in-out;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &:hover {
+      box-shadow: 0 0px 4px 1px hsla(0, 0%, 80%, 0.418);
+      scale: 1.02;
+    }
+
+    h3 {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ccc;
+      margin: 8px 0;
+    }
+
+    .btn_grp {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: end;
+      margin-top: 20px;
+    }
+
+    // border: 1px solid red;
+  }
+
+  .filter-controls {
+    display: flex;
+    flex-wrap: wrap; // Allow items to wrap to the next line
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    // background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .ant-input,
+    .ant-picker,
+    .ant-btn {
+      flex: 1;
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      border: 1px solid #ced4da;
+  
+      &.ant-input,
+      &.ant-picker {
+        margin-right: 1rem;
+      }
+    }
+  
+    .ant-btn {
+      margin-right: 1rem;
+      border: none;
+      cursor: pointer;
+  
+      &:first-of-type {
+        background-color: #007bff;
+        color: #fff;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+  
+      &:last-of-type {
+        background-color: #e9ecef;
+        color: #495057;
+  
+        &:hover {
+          background-color: #dee2e6;
+        }
+      }
+    }
+  
+    // Responsive styling
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+
+  
+      .ant-input,
+      .ant-picker,
+      .ant-btn {
+        width: 100%;
+        margin-right: 0;
+      }
+  
+      .ant-btn {
+        margin-bottom: 0.5rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 0.5rem;
+  
+      .ant-input,
+      .ant-picker,
+      .ant-btn {
+        font-size: 0.875rem; // Smaller font size on very small screens
+      }
+    }
+  }
+  
+}

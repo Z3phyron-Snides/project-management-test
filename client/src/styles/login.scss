@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+  .auth-form {
+    width: 30%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 20px;
+    border-radius: 12px;
+
+    .title {
+         text-align: center;
+         margin-bottom: 20px;
+    }
+  }
+}
